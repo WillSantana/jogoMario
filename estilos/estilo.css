@@ -1,0 +1,78 @@
+/* Define uma fonte personalizada chamada "Super Mario World" */
+@font-face {
+  font-family: "Super Mario World";
+  src: url(/fontes/SuperMarioWorld.ttf);
+}
+
+/* Define estilos gerais para todos os elementos HTML */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Super Mario World"; /* Define a fonte personalizada para todos os elementos */
+}
+
+/* Estilos para a div #cenario */
+#cenario {
+  /* background-color: red; */
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/imagens/cenario.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para a div #ceu */
+#ceu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/imagens/cenarioceu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+/* Estilos para a div #personagem */
+#personagem {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url(/imagens/marioParadoLadoDireito.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  bottom: 11%; /* Define a posição vertical inferior da div */
+  left: 0;
+}
+
+/* Estilos para a div #inimigo */
+#inimigo {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url(/imagens/inimigoLadoEsquerdo.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  bottom: 11%; /* Define a posição vertical inferior da div */
+  right: 0;
+}
+
+/* Estilos para a div #inimigo */
+#menudojogo {
+  position: absolute;
+  width: 1400px;
+  height: 160px;
+  background-image: url(/imagens/menuDoJogo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 0;
+}
