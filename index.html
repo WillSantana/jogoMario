@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/estilo.css" />
+    <script src="javascripts/script.js" defer></script> <!-- como linkar o codigo do script JavaScript -->
 
     <title>Game Mario</title>
-</head>
-<body>
-
-    <div id="ceu">
-        <!-- Div que representa o céu -->
-    </div>
-    
+  </head>
+  <body>
+    <!-- Div que representa o céu -->
+    <div id="ceu"></div>
+    <!-- Div que representa o cenário, tempo, vidas, pontos, moedas, personagem, inimigo do jogo -->
     <div id="cenario">
-        <!-- Div que representa o cenário do jogo -->
-
-        <div id="menudojogo">
-            <!-- Div que representa o menu do jogo -->
-        </div>
-        <div id="personagem">
-            <!-- Div que representa o personagem do jogo -->
-        </div>
-        <div id="inimigo">
-            <!-- Div que representa o inimigo do jogo -->
-        </div>
+      <div id="tempo">400</div>
+      <div id="vidas">5</div>
+      <div id="pontos">0</div>
+      <div id="moedas">0</div>
+      <div id="menudojogo"></div>
+      <div id="personagem"></div>
+      <div id="inimigo"></div>
+      <div id="bloco"></div>
+      <div id="bloco1"></div>
     </div>
-    
-    <!-- <script src="/javascripts/script.js" defer></script>
-    Inclusão do script JavaScript com atributo "defer" -->
-</body>
+  </body>
 </html>
